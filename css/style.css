@@ -128,27 +128,41 @@ table { border-collapse: collapse; border-spacing: 0; }
 .circle-btc {
 	width: 150px; 
 	height: 150px; 
-	background: url(images/btc.png) 0 0 no-repeat;  
+	background: url(images/btc2.png) 0 0 no-repeat;  
 }
 .circle-doge {
 	width: 120px; 
 	height: 120px; 
-	background: url(images/dgc.png) 0 0 no-repeat; 
+	background: url(images/dgc2.png) 0 0 no-repeat; 
 }
 .circle-ltc {
 	width: 120px; 
 	height: 120px; 
-	background: url(images/ltc.png) 0 0 no-repeat; 
+	background: url(images/ltc2.png) 0 0 no-repeat; 
 }
 .circle-drk {
 	width: 90px; 
 	height: 90px; 
-	background: url(images/drc.png) 0 0 no-repeat; 
+	background: url(images/drc2.png) 0 0 no-repeat; 
 }
 .circle-bc {
 	width: 90px; 
 	height: 90px; 
-	background: url(images/blc.png) 0 0 no-repeat; 
+	background: url(images/blc2.png) 0 0 no-repeat; 
 }
 
-
+.circle-btc:hover {
+	background: url(images/btc.png) 0 0 no-repeat;  
+}
+.circle-doge:hover {
+	background: url(images/dgc.png) 0 0 no-repeat; 
+}
+.circle-ltc:hover {
+	background: url(images/ltc.png) 0 0 no-repeat; 
+}
+.circle-drk:hover {
+	background: url(images/drc.png) 0 0 no-repeat; 
+}
+.circle-bc:hover {
+	background: url(images/blc.png) 0 0 no-repeat; 
+}
