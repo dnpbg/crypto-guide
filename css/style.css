@@ -70,9 +70,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* =========================================================================
 	#Header
 ========================================================================= */
-.header { }
+.header { overflow: hidden; }
 
-.logo { overflow: hidden; display: block; background: url(images/sprite.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
+.logo { position: relative; z-index: 3; overflow: hidden; display: block; float: left; width: 1px; height: 1px; margin: 10px 0 0 10px; background: url(images/logo.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
+.logo + .logo { margin-left: 80px; }
+
+
+.logo1 { width: 86px; height: 40px; background: url(images/logo1.png) 0 0 no-repeat; }
+.logo2 { width: 56px; height: 40px; background: url(images/logo2.png) 0 0 no-repeat; }
+.logo3 { width: 164px; height: 40px; background: url(images/logo3.png) 0 0 no-repeat; }
+.logo4 { width: 56px; height: 40px; background: url(images/logo4.png) 0 0 no-repeat; }
 
 /* =========================================================================
 	#Main
@@ -93,11 +100,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 	position: absolute; 
 	top: 50%; 
 	left: 50%;
+	z-index: 2; 
 	overflow: hidden; 
 	width: 630px; 
 	height: 190px; 
 	padding: 20px 0 0 20px; 
-	margin-top: -95px; 
+	margin-top: -180px; 
 	margin-left: -310px; 
 }
 
