@@ -67,12 +67,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 .bg { min-width: 100%; min-height: 100%; }
 .bg img { display: block; width: 100%; height: 100%; }
 
+/* ==========================================================================
+	#Intro
+========================================================================== */
+.intro { position: relative; z-index: 3; text-align: center; }
+
+.logo { overflow: hidden; display: inline-block; width: 324px; height: 150px; margin-top: 150px; background: url(images/logo.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
+
+.slogan { padding-top: 80px; font-size: 24px; line-height: 1px; color: #ccc; }
+
 /* =========================================================================
 	#Header
 ========================================================================= */
 .header { overflow: hidden; }
-
-.logo { position: relative; z-index: 3; overflow: hidden; display: block; float: left; width: 86px; height: 40px; margin: 10px 0 0 10px; background: url(images/logo.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
 
 /* =========================================================================
 	#Main
@@ -91,63 +98,51 @@ table { border-collapse: collapse; border-spacing: 0; }
 ========================================================================== */
 .circles {
 	position: absolute; 
-	top: 50%; 
+	top: 60%; 
 	left: 50%;
 	z-index: 2; 
 	overflow: hidden; 
-	width: 630px; 
-	height: 190px; 
+	width: 790px; 
+	height: 150px; 
 	padding: 20px 0 0 20px; 
-	margin-top: -180px; 
-	margin-left: -310px; 
+	/*margin-top: -55px; */
+	margin-left: -395px; 
 }
 
 .circle {
+	overflow: hidden; 
 	display: block; 
 	float: left;
-	overflow: hidden; 
-	border-radius: 50%; 
-	white-space: nowrap; 
-	text-indent: 100%;  
+	width: 110px; 
+	height: 110px; 
+	border-radius: 50%;
+ 	white-space: nowrap; 
+	text-indent: 100%; 
 }
 
 .circle:hover {
-	box-shadow: 0 0 20px #fff; 
+	/*box-shadow: 0 0 20px #fff; */
+	transition: all 0.5s;
+	transform: rotate(360deg);
 }
 
 .circle + .circle {
-	margin-left: 5px; 
+	margin-left: 50px; 
 }
 
-.circle-doge,
-.circle-ltc { margin-top: 15px; }
-
-.circle-drk,
-.circle-bc { margin-top: 30px; }
-
 .circle-btc {
-	width: 150px; 
-	height: 150px; 
 	background: url(images/btc2.png) 0 0 no-repeat;  
 }
 .circle-doge {
-	width: 120px; 
-	height: 120px; 
 	background: url(images/dgc2.png) 0 0 no-repeat; 
 }
 .circle-ltc {
-	width: 120px; 
-	height: 120px; 
 	background: url(images/ltc2.png) 0 0 no-repeat; 
 }
 .circle-drk {
-	width: 90px; 
-	height: 90px; 
 	background: url(images/drc2.png) 0 0 no-repeat; 
 }
 .circle-bc {
-	width: 90px; 
-	height: 90px; 
 	background: url(images/blc2.png) 0 0 no-repeat; 
 }
 
