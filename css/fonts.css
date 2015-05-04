@@ -1,0 +1,14 @@
+/* ==========================================================================
+	#Fonts
+========================================================================== */
+@font-face {
+    font-family: 'Simplex Regular';
+    src: url('fonts/simplex_-webfont.eot');
+    src: url('fonts/simplex_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/simplex_-webfont.woff2') format('woff2'),
+         url('fonts/simplex_-webfont.woff') format('woff'),
+         url('fonts/simplex_-webfont.ttf') format('truetype'),
+         url('fonts/simplex_-webfont.svg#simplexregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
