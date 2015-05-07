@@ -9,7 +9,7 @@
 html,
 body { height: 100%; }
 
-body { min-width: 100%; background: #fff; font-family: 'Simplex Regular', 'truetype'; font-size: 13px; line-height: 1.3; color: #000; }
+body { min-width: 100%; background: #fff; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.3; color: #000; }
 
 a { transition: all 0.3s; color: #0252aa; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-weight: normal; }
+h6 { padding-bottom: 10px; }
 
 img { border: 0; vertical-align: middle; }
 
@@ -58,7 +58,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* =========================================================================
 	#Containers
 ========================================================================= */
-.container { position: relative; min-height: 100%; }
+.container { position: relative; min-height: 100%; background: #424242; }
 .shell { width: 980px; margin: 0 auto; }
 
 /* ==========================================================================
@@ -72,24 +72,62 @@ table { border-collapse: collapse; border-spacing: 0; }
 ========================================================================== */
 .intro { position: relative; z-index: 3; text-align: center; }
 
-.logo { overflow: hidden; display: inline-block; width: 324px; height: 150px; margin-top: 150px; background: url(images/logo.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
+.slogan { margin-top: 40px; font-family: 'Simplex Regular', 'truetype'; font-size: 24px; line-height: 1; color: #ccc; }
 
-.slogan { margin-top: 40px; font-size: 24px; line-height: 1; color: #ccc; }
+/* =========================================================================
+	#Logo
+========================================================================= */
+.logo { overflow: hidden; display: inline-block; width: 324px; height: 150px; margin-top: 150px; background: url(images/logo.png) 0 0 no-repeat; white-space: nowrap; text-indent: 100%; }
+.logo-small { width: 149px; height: 70px; margin: 10px 0 0 40px; background: url(images/logo-small.png) 0 0 no-repeat; }
 
 /* =========================================================================
 	#Header
 ========================================================================= */
 .header { overflow: hidden; }
+.header .shell { height: 90px; }
+.header-left { float: left; width: 300px; }
+
+/* =========================================================================
+	#Nav
+========================================================================= */
+.nav { float: left; width: 450px; height: 40px; margin-top: 50px; background: #fff; box-shadow: 0 0 30px #000; }
+.nav ul { overflow: hidden; padding: 13px 0; list-style: none outside none; }
+.nav ul li { float: left; }
+.nav ul li ~ li { border-left: 1px solid #7a7a7a; }
+.nav ul li a { display: block; padding: 0 15px; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; text-transform: uppercase; }
+.nav ul li a:hover { color: #fe9730; text-decoration: none; }
+
+.tabs-nav .current a { color: #fe9730; text-decoration: none; }
+/* =========================================================================
+	#Banner
+========================================================================= */
+.banner { }
+.banner img { display: block; width: 100%; height: auto; }
 
 /* =========================================================================
 	#Main
 ========================================================================= */
-.main { }
+.main { position: relative; z-index: 2; }
+.main .shell { }
+
+.sidebar { padding: 20px 50px; color: #ccc; }
+.sidebar-left { float: left; width: 200px; }
+.sidebar-right { float: right; width: 130px; }
+
+.content { overflow: hidden; width: 350px; padding: 20px 50px; background: #fff; box-shadow: 0 0 50px #000; }
+
+/* =========================================================================
+	#Tabs
+========================================================================= */
+.tabs p { padding-bottom: 8px; }
 
 /* =========================================================================
 	#Footer
 ========================================================================= */
-.footer { }
+.footer { position: relative; z-index: 1; height: 100px; margin-top: -20px; background: #262b2f; }
+.footer .shell { overflow: hidden; }
+
+.copyright { float: right; margin-top: 50px; color: #7a7a7a; }
 
 /* -----------------------------------------------------------------------*/
 
