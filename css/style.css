@@ -97,11 +97,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 .nav ul li a { display: block; padding: 0 15px; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; text-transform: uppercase; }
 .nav ul li a:hover { color: #fe9730; text-decoration: none; }
 
-.tabs-nav .current a { color: #fe9730; text-decoration: none; }
 /* =========================================================================
 	#Banner
 ========================================================================= */
-.banner { }
+.banner { position: relative; z-index: 1; }
 .banner img { display: block; width: 100%; height: auto; }
 
 /* =========================================================================
@@ -110,16 +109,25 @@ table { border-collapse: collapse; border-spacing: 0; }
 .main { position: relative; z-index: 2; }
 .main .shell { }
 
-.sidebar { padding: 20px 50px; color: #ccc; }
-.sidebar-left { float: left; width: 200px; }
-.sidebar-right { float: right; width: 130px; }
+.sidebar { padding: 20px 25px; color: #ccc; }
+.sidebar-left { float: left; width: 250px; }
+.sidebar-right { float: right; width: 180px; }
 
-.content { overflow: hidden; width: 350px; padding: 20px 50px; background: #fff; box-shadow: 0 0 50px #000; }
+.content { overflow: hidden; width: 400px; padding: 0 25px 20px; background: #fff; box-shadow: 0 0 50px #000; }
 
 /* =========================================================================
 	#Tabs
 ========================================================================= */
 .tabs p { padding-bottom: 8px; }
+
+.tabs-nav { height: 40px; margin: 0 0 20px 0; border-bottom: 1px solid #7a7a7a; background: #fff; }
+.tabs-nav ul { overflow: hidden; padding: 13px 0; list-style: none outside none; }
+.tabs-nav ul li { float: left; }
+.tabs-nav ul li ~ li { border-left: 1px solid #7a7a7a; }
+.tabs-nav ul li a { display: block; padding: 0 15px; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; text-transform: uppercase; }
+.tabs-nav ul li a:hover { color: #fe9730; text-decoration: none; }
+.tabs-nav .current a { color: #fe9730; text-decoration: none; }
+
 
 /* =========================================================================
 	#Footer
