@@ -9,7 +9,7 @@
 html,
 body { height: 100%; }
 
-body { min-width: 100%; background: #fff; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.3; color: #000; }
+body { min-width: 1240px; background: #fff; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.3; color: #000; }
 
 a { transition: all 0.3s; color: #0252aa; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
@@ -59,7 +59,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	#Containers
 ========================================================================= */
 .container { position: relative; min-height: 100%; background: #424242; }
-.shell { width: 980px; margin: 0 auto; }
+.shell { width: 1200px; margin: 0 auto; }
 
 /* ==========================================================================
 	#Background
@@ -90,7 +90,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* =========================================================================
 	#Nav
 ========================================================================= */
-.nav { float: left; width: 450px; height: 40px; margin-top: 50px; background: #fff; box-shadow: 0 0 30px #000; }
+.nav { float: left; width: 670px; height: 40px; margin-top: 50px; background: #fff; box-shadow: 0 0 30px #000; }
 .nav ul { overflow: hidden; padding: 13px 0; list-style: none outside none; }
 .nav ul li { float: left; }
 .nav ul li ~ li { border-left: 1px solid #7a7a7a; }
@@ -110,23 +110,23 @@ table { border-collapse: collapse; border-spacing: 0; }
 .main .shell { }
 
 .sidebar { padding: 20px 25px; color: #ccc; }
-.sidebar-left { float: left; width: 250px; }
+.sidebar-left { float: left; width: 275px; padding: 10px 0 20px 25px; }
 .sidebar-right { float: right; width: 180px; }
 
-.content { overflow: hidden; width: 400px; padding: 0 25px 20px; background: #fff; box-shadow: 0 0 50px #000; }
+.content { overflow: hidden; width: 620px; padding: 20px 25px; background: #fff; box-shadow: 0 0 50px #000; }
 
 /* =========================================================================
 	#Tabs
 ========================================================================= */
 .tabs p { padding-bottom: 8px; }
 
-.tabs-nav { height: 40px; margin: 0 0 20px 0; border-bottom: 1px solid #7a7a7a; background: #fff; }
-.tabs-nav ul { overflow: hidden; padding: 13px 0; list-style: none outside none; }
-.tabs-nav ul li { float: left; }
-.tabs-nav ul li ~ li { border-left: 1px solid #7a7a7a; }
-.tabs-nav ul li a { display: block; padding: 0 15px; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; text-transform: uppercase; }
+.tabs-nav { }
+.tabs-nav ul { list-style: none outside none; }
+.tabs-nav ul li { padding-right: 25px; }
+.tabs-nav ul li a { display: block; padding: 10px; border-bottom: 1px solid #7a7a7a; font-size: 14px; line-height: 1.3; color: #ccc; font-weight: bold; text-transform: uppercase; transition: none; }
 .tabs-nav ul li a:hover { color: #fe9730; text-decoration: none; }
-.tabs-nav .current a { color: #fe9730; text-decoration: none; }
+.tabs-nav .current { padding-right: 0; }
+.tabs-nav .current a { color: #fe9730; background: #fff; text-decoration: none; }
 
 
 /* =========================================================================
