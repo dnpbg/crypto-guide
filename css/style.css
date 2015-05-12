@@ -83,7 +83,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* =========================================================================
 	#Header
 ========================================================================= */
-.header { overflow: hidden; }
+.header { position: relative; z-index: 2; }
 .header .shell { height: 90px; }
 .header-left { float: left; width: 300px; }
 
@@ -91,11 +91,20 @@ table { border-collapse: collapse; border-spacing: 0; }
 	#Nav
 ========================================================================= */
 .nav { float: left; width: 670px; height: 40px; margin-top: 50px; background: #fff; box-shadow: 0 0 30px #000; }
-.nav ul { overflow: hidden; padding: 13px 0; list-style: none outside none; }
-.nav ul li { float: left; }
-.nav ul li ~ li { border-left: 1px solid #7a7a7a; }
-.nav ul li a { display: block; padding: 0 15px; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; text-transform: uppercase; }
-.nav ul li a:hover { color: #fe9730; text-decoration: none; }
+.nav ul { list-style: none outside none; }
+.nav a { display: block; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; }
+.nav a:hover { color: #fe9730; text-decoration: none; }
+
+.nav > ul { padding: 13px 0; }
+.nav > ul > li { position: relative; float: left; }
+.nav > ul > li ~ li { border-left: 1px solid #7a7a7a; }
+.nav > ul > li > a { padding: 0 15px; text-transform: uppercase; }
+.nav > ul > li:hover > a { padding-bottom: 13px; color: #fe9730; }
+.nav > ul > li:hover > ul { display: block; }
+
+.nav ul ul { position: absolute; top: 27px; left: -1px; display: none; padding: 0 20px; border-left: 1px solid #7a7a7a; background: rgba(80, 80, 80, .8); }
+.nav ul ul li ~ li { border-top: 1px solid #7a7a7a; }
+.nav ul ul a { padding: 10px 15px; color: #fff; }
 
 /* =========================================================================
 	#Banner
