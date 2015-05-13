@@ -83,19 +83,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* =========================================================================
 	#Header
 ========================================================================= */
-.header { position: relative; z-index: 2; }
+.header { position: relative; z-index: 3; }
 .header .shell { height: 90px; }
 .header-left { float: left; width: 300px; }
 
 /* =========================================================================
 	#Nav
 ========================================================================= */
-.nav { float: left; width: 670px; height: 40px; margin-top: 50px; background: #fff; box-shadow: 0 0 30px #000; }
+.nav { float: left; width: 670px; height: 40px; margin-top: 50px; background: #fff; }
 .nav ul { list-style: none outside none; }
 .nav a { display: block; font-size: 14px; line-height: 1; color: #7a7a7a; font-weight: bold; }
 .nav a:hover { color: #fe9730; text-decoration: none; }
 
-.nav > ul { padding: 13px 0; }
+.nav > ul { padding: 13px 13px 0; }
 .nav > ul > li { position: relative; float: left; }
 .nav > ul > li ~ li { border-left: 1px solid #7a7a7a; }
 .nav > ul > li > a { padding: 0 15px; text-transform: uppercase; }
@@ -107,29 +107,28 @@ table { border-collapse: collapse; border-spacing: 0; }
 .nav ul ul a { padding: 10px 15px; color: #fff; }
 
 /* =========================================================================
-	#Banner
-========================================================================= */
-.banner { position: relative; z-index: 1; }
-.banner img { display: block; width: 100%; height: auto; }
-
-/* =========================================================================
 	#Main
 ========================================================================= */
 .main { position: relative; z-index: 2; }
-.main .shell { }
 
-.sidebar { padding: 20px 25px; color: #ccc; }
-.sidebar-left { float: left; width: 275px; padding: 10px 0 20px 25px; }
+.sidebar { padding: 247px 25px 20px; color: #ccc; }
+.sidebar-left { float: left; width: 275px; padding: 247px 0 20px 25px; }
 .sidebar-right { float: right; width: 180px; }
 
-.content { overflow: hidden; width: 620px; padding: 20px 25px; background: #fff; box-shadow: 0 0 50px #000; }
+.content { overflow: hidden; width: 620px; padding: 0 25px 20px; background: #fff; box-shadow: 0 0 50px #000; }
+
+/* =========================================================================
+	#Banner
+========================================================================= */
+.banner { padding-top: 15px; border-top: 1px solid #7a7a7a; }
+.banner img { display: block; width: 620px; height: auto; }
 
 /* =========================================================================
 	#Tabs
 ========================================================================= */
+.tabs { padding-top: 20px; }
 .tabs p { padding-bottom: 8px; }
 
-.tabs-nav { }
 .tabs-nav ul { list-style: none outside none; }
 .tabs-nav ul li { padding-right: 25px; }
 .tabs-nav ul li a { display: block; padding: 10px; border-bottom: 1px solid #7a7a7a; font-size: 14px; line-height: 1.3; color: #ccc; font-weight: bold; text-transform: uppercase; transition: none; }
