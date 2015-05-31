@@ -136,6 +136,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 .tabs-nav .current { padding-right: 0; }
 .tabs-nav .current a { color: #fe9730; background: #fff; text-decoration: none; }
 
+/* ==========================================================================
+	#Article
+========================================================================== */
+.article { padding-top: 20px; }
+.article p {  padding-bottom: 8px; }
 
 /* =========================================================================
 	#Footer
